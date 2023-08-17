@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            width: 25%;
+            height: 180px;
+            position: center;
+            margin-left: 450px;
+            margin-right: 350px;
+            border-style: solid;
+            border-radius: 20px;
+}
+        body
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    padding: 10px;
+}
+    </style>
+    <script>
+        function validatePassword() {
+var cp,np,cnp,output = true;
+
+cp = document.cp;
+np = document.np;
+cnp = document.cnp;
+
+if(!cp.value) {
+cp.focus();
+document.getElementById("currentPassword").innerHTML = "required";
+output = false;
+}
+else if(!np.value) {
+np.focus();
+document.getElementById("newPassword").innerHTML = "required";
+output = false;
+}
+else if(!cnp.value) {
+cnp.focus();
+document.getElementById("confirmPassword").innerHTML = "required";
+output = false;
+}
+if(np.value != cnp.value) {
+np.value="";
+cnp.value="";
+np.focus();
+document.getElementById("confirmPassword").innerHTML = "not same";
+output = false;
+} 	
+return output;
+}
+    </script>
+</head>
+<body>
+    <div class="d1">
+        <form action="password.php" method="POST">
+        <table style="margin-top: 20px; margin-left: 20px">
+            <tr><td>Current Password:</td><td><input type="text" style="background-color:lightgrey" placeholder="Current Password" name="cp"></td></tr>
+            <tr><td>New Password:</td><td><input type="text" style="background-color:lightgrey" placeholder="New Password" name="np"></td></tr>
+            <tr><td>Confirm Password:</td><td><input type="text" style="background-color:lightgrey" placeholder="Confirm Password" name="cnp"></td></tr>
+        
+         
+        </table>
+        <input type="submit" value="SUBMIT" name="cpsub" style="width: 100px; height: 30px; margin-top: 15px; margin-left: 30px;">
+         <a href="admin.html">
+             <button type="button" class="cancelbtn" style="width: 100px; height: 30px; margin-top: 15px; margin-left: 60px;">Cancel</button>
+           </a>
+    </form>
+     </div>
+</body>
+</html>

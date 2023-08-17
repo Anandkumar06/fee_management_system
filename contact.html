@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+  <div> <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-warning font-weight-bold"href="#">FEE MANAGMENT SYSTEM</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="web.html">Home <span class="sr-only"></span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            LOGIN
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="adminlogin.html">ADMIN</a>
+            <a class="dropdown-item" href="login.html">STUDENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contact.html" tabindex="-1" aria-disabled="false">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<center><h2>Contact Form</h2></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="australia">Select</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="australia">India</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div style="width: 75%; height: 450px; background-color: #f2f2f2; margin-left: 190px; margin-top: 20px;">
+  <center><h2><u><b>Contact us</b></u></h2>
+  <i class="fa fa-user icon"></i>
+  <h5>Anand:7352824733</h5>
+  <h5>Abhinav:8877803461</h5>
+  <h5>Chhaya:7808517500</h5>
+  <h5>Honey:6206052615</h5>
+  <h5>Navneeta:8210654814</h5>
+  <i class="fa fa-envelope icon"></i>
+  <h5>an@gmail.com</h5>
+  <h5>ab@gmail.com</h5>
+  <h5>ch@gmail.com</h5>
+  <h5>hn@gmail.com</h5>
+  <h5>nv@gmail.com</h5>
+</center>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+<style>
+    .d1{
+            background-color: black;
+            width: 19.65%;
+            height: 950px;
+            float: left;
+            border: solid;
+        }
+        button:hover{
+            background-color: cornsilk;
+        }
+        .d2{
+            width: 79%;
+            height: 780px;
+            float: left;
+            text-align: center;
+            background-color: honeydew;
+        }
+</style>
+</head>
+<body>
+    <div class="d1">
+    
+        <h2 style="color:cornsilk; text-align: center; margin-top: 50px;"><b>USER</b></h2>
+        <hr color="white" style="width: 100%; height: 2px;">
+		 <a href="userinterface.php">
+        <button style="width: 100%; height: 60px;">MY PROFILE</button></a>
+		
+		 <button style="width: 100%; height: 60px;">MAKE PAYMENT</button>
+		  <a href="receipt.html">
+        <button style="width: 100%; height: 60px;">RECEIPT</button></a>
+        <a href="userchangepswd.html">
+            <button style="width: 100%; height: 60px;">CHANGE PASSWORD</button></a>
+		 <a href="web.html">
+        <button style="width: 100%; height: 60px;">LOGOUT</button></a>
+        </div>
+
+     <div class="d2">
+        <h2 style="color: black; text-align: center; margin-top: 50px;"><b>FEE RECORDS</b></h2>
+        <hr color="black" style="width: 100%; height: 2px;">
+        
+        <form style="background-color: burlywood;">
+            <br><br><br>
+            REGISTRATION NUMBER :<input type="text" id="tr" placeholder="Enter your registration no">
+            <br><br>
+            D.O.B:<input type="text" id="td" placeholder="Enter date of birth">
+            <br><br>
+            <input type="button" value="Proceed" onclick="" style="color: orange; background-color: green;">
+            <br><br>
+        
+        </form>
+
+        <br><br><br><br>
+        <center>
+        <table border="2">
+            <tr>
+                <th><b>COURSE</b></th>  <th><b>SEMESTER</b></th>  <th><b>TOTAL FEES</b></th>  <th><b>STATUS</b></th>
+            </tr>
+            <tr><th rowspan="7"><input type=" text" id="tc"></th> <td> 1</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t1"></td></tr>
+            <tr><td> 2</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t2"></td></tr>
+            <tr><td> 3</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t3"></td></tr>
+            <tr><td> 4</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t4"></td></tr>
+            <tr><td> 5</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t5"></td></tr>
+            <tr><td> 6</td> <td><input type=" text" id="tc"></td> <td><input type="text" id="t6"></td></tr>
+            
+        </table>
+		
+		<h1><b> SELECT PAYMENT TYPE</b></h2>
+		<br>
+	 <a href="gateway.html">
+		<button style="width: 50%; height: 50px; background-color:green"> <b>SEMESTER ADDMITION FEE</b></button>
+		</a>
+		<div id="dd">
+		<select>
+		<option>SELECT</option>
+		<option >SEM 1</option>
+        <option>SEM 2</option>
+        <option>SEM 3</option>
+        <option>SEM 4</option>
+		<option>SEM 5</option>
+		<option>SEM 6</option>
+		</select>
+		</div>
+		</a>
+		 <a href="gateway.html">
+        <button style="width: 50%; height: 50px; background-color:orange"><b>MID SEM FEE</b></button>
+		</a>
+		<div id="dd">
+		<select>
+		<option>SELECT</option>
+		<option >SEM 1</option>
+        <option>SEM 2</option>
+        <option>SEM 3</option>
+        <option>SEM 4</option>
+		<option>SEM 5</option>
+		<option>SEM 6</option>
+		</select>
+		</div>
+		</a>
+		
+		<a href="gateway.html">
+        <button style="width: 50%; height: 50px; background-color:green"> <b>EXAMINATION FEE (REGULAR)</b></button>
+		</a>
+		<div id="dd">
+		<select>
+		<option>SELECT</option>
+		<option >SEM 1</option>
+        <option>SEM 2</option>
+        <option>SEM 3</option>
+        <option>SEM 4</option>
+		<option>SEM 5</option>
+		<option>SEM 6</option>
+		</select>
+		</div>
+		
+        <a href="gateway.html">
+		 <button style="width: 50%; height: 50px; background-color: orange"><b>EXAMINATION FEE (REPEATER)</b></button>
+		 </a>
+		<div id="dd">
+		<select>
+		<option>SELECT</option>
+		<option >SEM 1</option>
+        <option>SEM 2</option>
+        <option>SEM 3</option>
+        <option>SEM 4</option>
+		<option>SEM 5</option>
+		<option>SEM 6</option>
+		</select>
+		</div>
+		
+		
+	    </center>
+        
+        </div>
+       </center>
+     </body>
+    </html>
